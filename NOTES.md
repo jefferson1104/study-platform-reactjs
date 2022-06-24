@@ -1,8 +1,6 @@
 # NOTES
 
 
-
-
 #### Tailwindcss
 ```bash
 # Para instalar o tailwindcss no projeto
@@ -17,5 +15,4 @@ $ npx tailwindcss init -p
 ```bash
 # Para instalar o apolo client e o graphQL
 $ npm i @apollo/client graphql
-
 ```
