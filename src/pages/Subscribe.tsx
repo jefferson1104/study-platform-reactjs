@@ -23,7 +23,7 @@ export function Subscribe() {
       }
     })
 
-    navigate("/event")
+    navigate("/login")
   }
 
   return (
