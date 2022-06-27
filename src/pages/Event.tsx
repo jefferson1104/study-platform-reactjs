@@ -1,12 +1,20 @@
-import { useParams } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
+import { useParams, useNavigate } from "react-router-dom";
+
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 import { Video } from "../components/Video";
 
 export function Event() {
+  const navigate = useNavigate();
   const { slug } = useParams<{ slug: string }>()
+  const { user } = useAuth0();
 
+  if(!user){
+    navigate('/login')
+  }
 
+  console.log('CONSOLANDO USER', user)
 
   return (
     <div className="flex flex-col min-h-screen">
