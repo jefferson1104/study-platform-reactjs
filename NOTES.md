@@ -16,3 +16,8 @@ $ npx tailwindcss init -p
 # Para instalar o apolo client e o graphQL
 $ npm i @apollo/client graphql
 ```
+
+### Melhorias para este projeto
+- Criar login com github ou gmail como provider
+- Não permitir os usuarios acessar a pagina dos videos do evento sem estar logado
+- Ajustar o layout para mobile
